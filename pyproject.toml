@@ -1,0 +1,21 @@
+[project]
+name = "algoritmogeneticoed"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "a01647198", email = "a01647198@tec.mx" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "scipy>=1.18.1",
+    "sympy>=1.14.0",
+]
+
+[project.scripts]
+algoritmogeneticoed = "algoritmogeneticoed:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
