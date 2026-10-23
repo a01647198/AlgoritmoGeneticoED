@@ -7800,7 +7800,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -7819,6 +7819,9 @@ a.anchor-link {
 <span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 <span class="c1">#fitness function</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">bingo.local_optimizers.local_opt_fitness</span><span class="w"> </span><span class="kn">import</span> <span class="n">LocalOptFitnessFunction</span> <span class="c1"># CLO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">lru_cache</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy.parsing.sympy_parser</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span><span class="n">parse_expr</span><span class="p">,</span> <span class="n">standard_transformations</span><span class="p">,</span>
+                                        <span class="n">implicit_multiplication_application</span><span class="p">,</span> <span class="n">convert_xor</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7901,7 +7904,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="mi">150</span>
@@ -7918,7 +7921,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Primera-Ecuaci%C3%B3n">Primera Ecuación<a class="anchor-link" href="#Primera-Ecuaci%C3%B3n">¶</a></h2><p>$\frac{d y}{dx} - y = 0 \ , \quad y(0) = 1$</p>
+<h2 id="Primera-Ecuaci%C3%B3n-(para-agarrar-confianza)">Primera Ecuación (para agarrar confianza)<a class="anchor-link" href="#Primera-Ecuaci%C3%B3n-(para-agarrar-confianza)">¶</a></h2><p>$\frac{d y}{dx} - y = 0 \ , \quad y(0) = 1$</p>
 <p>$y(x) = e^{x}$</p>
 </div>
 </div>
@@ -7934,12 +7937,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cd7fae56">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cd7fae56">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">component_generator</span> <span class="o">=</span> <span class="n">ComponentGenerator</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#el 1 es la dimensión de X</span>
@@ -7958,34 +7961,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>sin(1.000000) + (X_0)^(1.000000) 
-
-X_0 
-
-0 
-
-cos(X_0) 
-
-cos(cos(cos(X_0))) 
-
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ed1ec34b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [156]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#CADA VEZ QUE SE COMPILA ESTE BLOQUE SE HACE OTRA POBLACIÓN, CUIDADO</span>
@@ -8012,13 +7993,13 @@ cos(cos(cos(X_0)))
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(2)(X_0) + sin(X_0) 
+<pre>1 
+
+1 + exp(1) 
 
 1.000000 
 
-2 
-
-X_0 
+(1.000000)((X_0)^(-1)) 
 
 1.000000 
 
@@ -8033,7 +8014,7 @@ X_0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">poblacion</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_formatted_string</span><span class="p">(</span><span class="s2">"console"</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
@@ -8049,10 +8030,21 @@ X_0
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(2)(X_0) + sin(X_0) 
+<pre>((X_0)^(-1))((cos(cos(X_0)) - (X_0))^((-1)(cos(cos(X_0)) - (X_0)))) - (X_0) 
 
 </pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dfa2a130">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Al-final-me-di-cuenta-que-toda-la-secci%C3%B3n-de-iniciar-poblaci%C3%B3n-no-sirve-de-nada-para-el-AG,-pero-me-ayud%C3%B3-mucho-a-entender-que-estaba-pasando,-asi-que-lo-voy-a-dejar-tal-cual">Al final me di cuenta que toda la sección de iniciar población no sirve de nada para el AG, pero me ayudó mucho a entender que estaba pasando, asi que lo voy a dejar tal cual<a class="anchor-link" href="#Al-final-me-di-cuenta-que-toda-la-secci%C3%B3n-de-iniciar-poblaci%C3%B3n-no-sirve-de-nada-para-el-AG,-pero-me-ayud%C3%B3-mucho-a-entender-que-estaba-pasando,-asi-que-lo-voy-a-dejar-tal-cual">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8067,19 +8059,34 @@ X_0
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=092fdddf">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=092fdddf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">Make_Xi</span><span class="p">(</span><span class="n">seed</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">n_points</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">Make_Xi</span><span class="p">(</span><span class="n">seed</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">n_points</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">min</span> <span class="o">=</span> <span class="nb">float</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="nb">float</span><span class="p">):</span>
     <span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">rng</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.99</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n_points</span><span class="p">))</span>
-<span class="n">Xi</span> <span class="o">=</span> <span class="n">Make_Xi</span><span class="p">(</span><span class="mi">67</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">nosequenombreponerperoesunarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">rng</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n_points</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">nosequenombreponerperoesunarray</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">Xi</span> <span class="o">=</span> <span class="n">Make_Xi</span><span class="p">(</span><span class="mi">67</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.99</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Xi</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>(100, 1)
+</pre>
 </div>
 </div>
 </div>
@@ -8089,14 +8096,14 @@ X_0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">EDO1</span><span class="p">(</span><span class="n">VectorBasedFunction</span><span class="p">):</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">lambdA</span> <span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">metric</span><span class="o">=</span><span class="s2">"mse"</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
-
+        <span class="bp">self</span><span class="o">.</span><span class="n">lambdA</span> <span class="o">=</span> <span class="n">lambdA</span>
 
 
     <span class="k">def</span><span class="w"> </span><span class="nf">evaluate_fitness_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">individual</span><span class="p">):</span>
@@ -8107,15 +8114,15 @@ X_0
 
 
         <span class="c1">#DEBE CUMPLIR LA EDO</span>
-        <span class="n">residual1</span> <span class="o">=</span> <span class="n">dy_dx</span> <span class="o">-</span> <span class="n">y</span>
+        <span class="n">residual1</span> <span class="o">=</span> <span class="p">(</span><span class="n">dy_dx</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
 
 
         <span class="c1">#DEBE CUMPLIR LA CONDICIÓN INICIAL  y(0) = 1</span>
         <span class="n">ConIni</span> <span class="o">=</span> <span class="n">individual</span><span class="o">.</span><span class="n">evaluate_equation_at</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.0</span><span class="p">]]))[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 
-        <span class="n">residual2</span> <span class="o">=</span> <span class="n">ConIni</span> <span class="o">-</span> <span class="mf">1.0</span>
+        <span class="n">residual2</span> <span class="o">=</span> <span class="p">(</span><span class="n">ConIni</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
 
-        <span class="n">RESIDUALULTRAMASTERpro</span> <span class="o">=</span> <span class="n">residual1</span> <span class="o">+</span> <span class="n">residual2</span>
+        <span class="n">RESIDUALULTRAMASTERpro</span> <span class="o">=</span> <span class="n">residual1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">lambdA</span> <span class="o">*</span> <span class="n">residual2</span>
         <span class="k">return</span> <span class="n">RESIDUALULTRAMASTERpro</span>
 </pre></div>
 </div>
@@ -8127,14 +8134,12 @@ X_0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">fitness</span> <span class="o">=</span> <span class="n">EDO1</span><span class="p">(</span><span class="n">Xi</span><span class="p">)</span>
-<span class="n">evaluator</span> <span class="o">=</span> <span class="n">Evaluation</span><span class="p">(</span><span class="n">fitness</span><span class="p">)</span>
-<span class="n">evaluator</span><span class="p">(</span><span class="n">poblacion</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">fitness</span> <span class="o">=</span> <span class="n">EDO1</span><span class="p">(</span><span class="n">Xi</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Función objetivo</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">ScipyOptimizer</span><span class="p">(</span><span class="n">fitness</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">"BFGS"</span><span class="p">)</span>
-<span class="n">local_opt_fitness</span> <span class="o">=</span> <span class="n">LocalOptFitnessFunction</span><span class="p">(</span><span class="n">fitness</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">)</span>
+<span class="n">local_opt_fitness</span> <span class="o">=</span> <span class="n">LocalOptFitnessFunction</span><span class="p">(</span><span class="n">fitness</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">)</span> <span class="c1">#Evaluador con optimización local</span>
 <span class="n">evaluator</span> <span class="o">=</span> <span class="n">Evaluation</span><span class="p">(</span><span class="n">local_opt_fitness</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8157,7 +8162,7 @@ X_0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">crossover</span> <span class="o">=</span> <span class="n">AGraphCrossover</span><span class="p">()</span>
@@ -8183,7 +8188,7 @@ X_0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [91]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ea</span> <span class="o">=</span> <span class="n">AgeFitnessEA</span> <span class="p">(</span><span class="n">evaluator</span> <span class="p">,</span> <span class="n">agraph_generator</span> <span class="p">,</span><span class="n">crossover</span> <span class="p">,</span> <span class="n">mutation</span> <span class="p">,</span> <span class="mf">0.5</span> <span class="p">,</span> <span class="mf">0.5</span> <span class="p">,</span> <span class="n">P</span><span class="p">)</span>
@@ -8198,10 +8203,10 @@ X_0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [94]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">opt_result</span> <span class="o">=</span> <span class="n">island</span><span class="o">.</span><span class="n">evolve_until_convergence</span><span class="p">(</span><span class="n">max_generations</span> <span class="o">=</span> <span class="mi">500</span> <span class="p">,</span> <span class="n">fitness_threshold</span> <span class="o">=</span> <span class="mf">1e-10</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">opt_result</span> <span class="o">=</span> <span class="n">island</span><span class="o">.</span><span class="n">evolve_until_convergence</span><span class="p">(</span><span class="n">max_generations</span> <span class="o">=</span> <span class="mi">100</span> <span class="p">,</span> <span class="n">fitness_threshold</span> <span class="o">=</span> <span class="mf">1e-10</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">island</span><span class="o">.</span><span class="n">get_best_individual</span><span class="p">())</span>
 </pre></div>
@@ -8217,6 +8222,592 @@ X_0
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>exp(X_0)
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2f93e68b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Ecuaci%C3%B3n-2">Ecuación 2<a class="anchor-link" href="#Ecuaci%C3%B3n-2">¶</a></h2><p>$\frac{\partial^{4} u(x)}{\partial x^{4}}  - \frac{w(x)}{El} = 0$</p>
+<p>$u(0)=0,\ \ \  u(l)=0,  \ \ \  \frac{d^{2} u}{dx^{2}} - k =0, \ \ \ k(0)=0, \ \ \ k(l)=0$</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2956f770">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">x_sym</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">'X_0'</span><span class="p">)</span>
+<span class="n">transformaciones</span> <span class="o">=</span> <span class="n">standard_transformations</span> <span class="o">+</span> <span class="p">(</span><span class="n">implicit_multiplication_application</span><span class="p">,</span> <span class="n">convert_xor</span><span class="p">)</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="n">MARCA</span> <span class="o">=</span> <span class="mi">1_000_000</span>
+
+<span class="nd">@lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_simbolicas</span><span class="p">(</span><span class="n">estructura</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="c1"># las constantes marcadas (1000000.000000, 1000001.000000...) se vuelven C_0, C_1...</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\d+\.\d</span><span class="si">{6}</span><span class="s1">'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">()))</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">MARCA</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="n">estructura</span><span class="p">)</span>
+    <span class="n">cs</span> <span class="o">=</span> <span class="p">[</span><span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)]</span>
+    <span class="n">loc</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'X_0'</span><span class="p">:</span> <span class="n">x_sym</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">:</span> <span class="n">cs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)}}</span>
+    <span class="n">expr</span> <span class="o">=</span> <span class="n">parse_expr</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">local_dict</span><span class="o">=</span><span class="n">loc</span><span class="p">,</span> <span class="n">transformations</span><span class="o">=</span><span class="n">transformaciones</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">sp</span><span class="o">.</span><span class="n">lambdify</span><span class="p">([</span><span class="n">x_sym</span><span class="p">,</span> <span class="o">*</span><span class="n">cs</span><span class="p">],</span> <span class="n">sp</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">x_sym</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="k">else</span> <span class="n">expr</span><span class="p">,</span> <span class="s1">'numpy'</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">derivadas_sympy</span><span class="p">(</span><span class="n">individual</span><span class="p">):</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">individual</span><span class="o">.</span><span class="n">get_number_local_optimization_params</span><span class="p">()</span>
+    <span class="n">consts</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">individual</span><span class="o">.</span><span class="n">constants</span><span class="p">]</span>
+    <span class="n">marcado</span> <span class="o">=</span> <span class="n">individual</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">marcado</span><span class="o">.</span><span class="n">set_local_optimization_params</span><span class="p">([</span><span class="n">MARCA</span> <span class="o">+</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)])</span>
+    <span class="n">f0</span><span class="p">,</span> <span class="n">f2</span><span class="p">,</span> <span class="n">f4</span> <span class="o">=</span> <span class="n">_simbolicas</span><span class="p">(</span><span class="n">marcado</span><span class="o">.</span><span class="n">get_formatted_string</span><span class="p">(</span><span class="s2">"sympy"</span><span class="p">),</span> <span class="n">k</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">f0</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="o">*</span><span class="n">consts</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">f2</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="o">*</span><span class="n">consts</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">f4</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="o">*</span><span class="n">consts</span><span class="p">))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">evalua</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">pts</span><span class="p">):</span>
+    <span class="c1"># si la expresión es constante, lambdify regresa un escalar: lo estiramos al tamaño de pts</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">broadcast_to</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">pts</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">),</span> <span class="n">pts</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f947abbd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">EDO2</span><span class="p">(</span><span class="n">VectorBasedFunction</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">lambdA</span> <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">metric</span><span class="o">=</span><span class="s2">"mse"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lambdA</span> <span class="o">=</span> <span class="n">lambdA</span>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">evaluate_fitness_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">individual</span><span class="p">):</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="mf">5e-5</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="mi">10</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">u</span><span class="p">,</span> <span class="n">d2u_dx2</span><span class="p">,</span> <span class="n">d4u_dx4</span> <span class="o">=</span> <span class="n">derivadas_sympy</span><span class="p">(</span><span class="n">individual</span><span class="p">)</span>   <span class="c1"># recibe el individuo, no el string</span>
+
+            <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+            <span class="n">extremos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">l</span><span class="p">])</span>
+
+            <span class="c1">#DEBE CUMPLIR LA EDO   u'''' = c</span>
+            <span class="n">residual1</span> <span class="o">=</span> <span class="p">(</span><span class="n">evalua</span><span class="p">(</span><span class="n">d4u_dx4</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="n">c</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+            <span class="c1">#DEBE CUMPLIR LAS FRONTERAS  u(0)=u(l)=0  y  u''(0)=u''(l)=0</span>
+            <span class="n">residual2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">evalua</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">extremos</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">l</span><span class="o">**</span><span class="mi">4</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">evalua</span><span class="p">(</span><span class="n">d2u_dx2</span><span class="p">,</span> <span class="n">extremos</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">l</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+            <span class="n">RESIDUALULTRAMASTERpro</span> <span class="o">=</span> <span class="n">residual1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">lambdA</span> <span class="o">*</span> <span class="n">residual2</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">RESIDUALULTRAMASTERpro</span><span class="p">)):</span>
+                <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="mf">1e10</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">RESIDUALULTRAMASTERpro</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">),</span> <span class="mf">1e10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=019b6d02">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">component_generator</span> <span class="o">=</span> <span class="n">ComponentGenerator</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">component_generator</span><span class="o">.</span><span class="n">add_operator</span><span class="p">(</span><span class="s2">"+"</span><span class="p">)</span>
+<span class="n">component_generator</span><span class="o">.</span><span class="n">add_operator</span><span class="p">(</span><span class="s2">"-"</span><span class="p">)</span>
+<span class="n">component_generator</span><span class="o">.</span><span class="n">add_operator</span><span class="p">(</span><span class="s2">"*"</span><span class="p">)</span>
+<span class="n">agraph_generator</span> <span class="o">=</span> <span class="n">AGraphGenerator</span><span class="p">(</span><span class="n">Complejidad</span><span class="p">,</span> <span class="n">component_generator</span><span class="p">,</span> <span class="n">use_simplification</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="n">Xi</span> <span class="o">=</span> <span class="n">Make_Xi</span><span class="p">(</span><span class="mi">67</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+
+<span class="n">fitness</span> <span class="o">=</span> <span class="n">EDO2</span><span class="p">(</span><span class="n">Xi</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">ScipyOptimizer</span><span class="p">(</span><span class="n">fitness</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">"lm"</span><span class="p">)</span>
+<span class="n">local_opt_fitness</span> <span class="o">=</span> <span class="n">LocalOptFitnessFunction</span><span class="p">(</span><span class="n">fitness</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">)</span>
+<span class="n">evaluator</span> <span class="o">=</span> <span class="n">Evaluation</span><span class="p">(</span><span class="n">local_opt_fitness</span><span class="p">)</span>
+
+<span class="n">crossover</span> <span class="o">=</span> <span class="n">AGraphCrossover</span><span class="p">()</span>
+<span class="n">mutation</span> <span class="o">=</span> <span class="n">AGraphMutation</span><span class="p">(</span><span class="n">component_generator</span><span class="p">)</span>
+
+<span class="n">ea</span> <span class="o">=</span> <span class="n">AgeFitnessEA</span><span class="p">(</span><span class="n">evaluator</span><span class="p">,</span> <span class="n">agraph_generator</span><span class="p">,</span> <span class="n">crossover</span><span class="p">,</span> <span class="n">mutation</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span>
+<span class="n">island</span> <span class="o">=</span> <span class="n">Island</span><span class="p">(</span><span class="n">ea</span><span class="p">,</span> <span class="n">agraph_generator</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=04017af8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">collections</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a0190606">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">errores</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">P</span><span class="p">):</span>
+    <span class="n">ind</span> <span class="o">=</span> <span class="n">agraph_generator</span><span class="p">()</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">u</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">d4</span> <span class="o">=</span> <span class="n">derivadas_sympy</span><span class="p">(</span><span class="n">ind</span><span class="p">)</span>
+        <span class="n">evalua</span><span class="p">(</span><span class="n">d4</span><span class="p">,</span> <span class="n">Xi</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]);</span> <span class="n">evalua</span><span class="p">(</span><span class="n">d2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">]))</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">errores</span><span class="p">[</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)[:</span><span class="mi">70</span><span class="p">]]</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Fallos de"</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="s2">":"</span><span class="p">,</span> <span class="nb">dict</span><span class="p">(</span><span class="n">errores</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Fallos de 150 : {}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6a258e76">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">paso</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
+    <span class="n">island</span><span class="o">.</span><span class="n">evolve</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"gen </span><span class="si">{</span><span class="n">paso</span><span class="o">*</span><span class="mi">10</span><span class="si">}</span><span class="s2"> | mejor fitness </span><span class="si">{</span><span class="n">island</span><span class="o">.</span><span class="n">get_best_fitness</span><span class="p">()</span><span class="si">:</span><span class="s2">.6g</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">t0</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> s"</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">island</span><span class="o">.</span><span class="n">get_best_fitness</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mf">1e-15</span><span class="p">:</span> <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>gen 10 | mejor fitness 0.185025 | 1 s
+gen 20 | mejor fitness 0.155745 | 3 s
+gen 30 | mejor fitness 0.14045 | 5 s
+gen 40 | mejor fitness 0.14045 | 7 s
+gen 50 | mejor fitness 0.14045 | 11 s
+gen 60 | mejor fitness 0.00179348 | 14 s
+gen 70 | mejor fitness 0.00179348 | 16 s
+gen 80 | mejor fitness 0.00179348 | 18 s
+gen 90 | mejor fitness 0.00179348 | 21 s
+gen 100 | mejor fitness 0.00179348 | 23 s
+gen 110 | mejor fitness 0.00179348 | 25 s
+gen 120 | mejor fitness 0.00179348 | 28 s
+gen 130 | mejor fitness 0.00179348 | 31 s
+gen 140 | mejor fitness 0.00179348 | 34 s
+gen 150 | mejor fitness 0.00179348 | 36 s
+gen 160 | mejor fitness 0.000294519 | 38 s
+gen 170 | mejor fitness 0.000294519 | 40 s
+gen 180 | mejor fitness 0.000294519 | 42 s
+gen 190 | mejor fitness 0.000294519 | 44 s
+gen 200 | mejor fitness 0.000294519 | 46 s
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=78e7d38e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">bingo.evolutionary_algorithms.generalized_crowding</span><span class="w"> </span><span class="kn">import</span> <span class="n">GeneralizedCrowdingEA</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">bingo.evolutionary_optimizers.serial_archipelago</span><span class="w"> </span><span class="kn">import</span> <span class="n">SerialArchipelago</span>
+
+<span class="n">ea</span> <span class="o">=</span> <span class="n">GeneralizedCrowdingEA</span><span class="p">(</span><span class="n">evaluator</span><span class="p">,</span> <span class="n">crossover</span><span class="p">,</span> <span class="n">mutation</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">island</span> <span class="o">=</span> <span class="n">Island</span><span class="p">(</span><span class="n">ea</span><span class="p">,</span> <span class="n">agraph_generator</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span>
+<span class="n">archipielago</span> <span class="o">=</span> <span class="n">SerialArchipelago</span><span class="p">(</span><span class="n">island</span><span class="p">,</span> <span class="n">num_islands</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">paso</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
+    <span class="n">archipielago</span><span class="o">.</span><span class="n">evolve</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"gen </span><span class="si">{</span><span class="n">paso</span><span class="o">*</span><span class="mi">10</span><span class="si">}</span><span class="s2"> | mejor fitness </span><span class="si">{</span><span class="n">archipielago</span><span class="o">.</span><span class="n">get_best_fitness</span><span class="p">()</span><span class="si">:</span><span class="s2">.6g</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">t0</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> s"</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">archipielago</span><span class="o">.</span><span class="n">get_best_fitness</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mf">1e-15</span><span class="p">:</span> <span class="k">break</span>
+<span class="n">mejor</span> <span class="o">=</span> <span class="n">archipielago</span><span class="o">.</span><span class="n">get_best_individual</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>gen 10 | mejor fitness 0.11664 | 8 s
+gen 20 | mejor fitness 0.11664 | 15 s
+gen 30 | mejor fitness 0.11664 | 21 s
+gen 40 | mejor fitness 0.0520481 | 27 s
+gen 50 | mejor fitness 0.0520481 | 33 s
+gen 60 | mejor fitness 0.0145851 | 40 s
+gen 70 | mejor fitness 0.012556 | 47 s
+gen 80 | mejor fitness 0.012556 | 54 s
+gen 90 | mejor fitness 0.012556 | 61 s
+gen 100 | mejor fitness 0.012556 | 68 s
+gen 110 | mejor fitness 0.012556 | 76 s
+gen 120 | mejor fitness 0.012556 | 84 s
+gen 130 | mejor fitness 0.00942653 | 90 s
+gen 140 | mejor fitness 0.00168634 | 98 s
+gen 150 | mejor fitness 0.00168634 | 105 s
+gen 160 | mejor fitness 0.00168634 | 116 s
+gen 170 | mejor fitness 0.00168634 | 124 s
+gen 180 | mejor fitness 0.00168634 | 132 s
+gen 190 | mejor fitness 0.00168634 | 141 s
+gen 200 | mejor fitness 0.00168634 | 150 s
+gen 210 | mejor fitness 0.00168634 | 159 s
+gen 220 | mejor fitness 0.00168634 | 168 s
+gen 230 | mejor fitness 0.00168634 | 177 s
+gen 240 | mejor fitness 0.000855432 | 186 s
+gen 250 | mejor fitness 0.000855432 | 196 s
+gen 260 | mejor fitness 0.000855432 | 205 s
+gen 270 | mejor fitness 0.000855432 | 215 s
+gen 280 | mejor fitness 0.000855432 | 226 s
+gen 290 | mejor fitness 0.000855432 | 241 s
+gen 300 | mejor fitness 0.000855432 | 255 s
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=467dcf53">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">mejor</span> <span class="o">=</span> <span class="n">archipielago</span><span class="o">.</span><span class="n">get_best_individual</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"fitness:"</span><span class="p">,</span> <span class="n">archipielago</span><span class="o">.</span><span class="n">get_best_fitness</span><span class="p">())</span>
+
+<span class="c1"># fórmula expandida con las constantes EXACTAS (el print de bingo solo muestra 6 decimales)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">expresion_exacta</span><span class="p">(</span><span class="n">ind</span><span class="p">):</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">ind</span><span class="o">.</span><span class="n">get_number_local_optimization_params</span><span class="p">()</span>
+    <span class="n">consts</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">ind</span><span class="o">.</span><span class="n">constants</span><span class="p">]</span>
+    <span class="n">marcado</span> <span class="o">=</span> <span class="n">ind</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">marcado</span><span class="o">.</span><span class="n">set_local_optimization_params</span><span class="p">([</span><span class="n">MARCA</span> <span class="o">+</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)])</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\d+\.\d</span><span class="si">{6}</span><span class="s1">'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">()))</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">MARCA</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+               <span class="n">marcado</span><span class="o">.</span><span class="n">get_formatted_string</span><span class="p">(</span><span class="s2">"sympy"</span><span class="p">))</span>
+    <span class="n">cs</span> <span class="o">=</span> <span class="p">[</span><span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)]</span>
+    <span class="n">loc</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'X_0'</span><span class="p">:</span> <span class="n">x_sym</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">:</span> <span class="n">cs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)}}</span>
+    <span class="n">expr</span> <span class="o">=</span> <span class="n">parse_expr</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">local_dict</span><span class="o">=</span><span class="n">loc</span><span class="p">,</span> <span class="n">transformations</span><span class="o">=</span><span class="n">transformaciones</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sp</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">expr</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">cs</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span> <span class="n">consts</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)}))</span>
+
+<span class="n">c</span><span class="p">,</span> <span class="n">l</span> <span class="o">=</span> <span class="mf">5e-5</span><span class="p">,</span> <span class="mi">10</span>
+<span class="n">u_mia</span> <span class="o">=</span> <span class="n">expresion_exacta</span><span class="p">(</span><span class="n">mejor</span><span class="p">)</span>
+<span class="n">u_paper</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span> <span class="o">*</span> <span class="n">c</span> <span class="o">*</span> <span class="p">(</span><span class="n">x_sym</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">l</span><span class="o">*</span><span class="n">x_sym</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="n">l</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="n">x_sym</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Obtenida:"</span><span class="p">,</span> <span class="n">u_mia</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Paper:   "</span><span class="p">,</span> <span class="n">u_paper</span><span class="p">)</span>
+
+
+<span class="c1"># gráfica</span>
+<span class="n">f_mia</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">lambdify</span><span class="p">(</span><span class="n">x_sym</span><span class="p">,</span> <span class="n">u_mia</span><span class="p">,</span> <span class="s1">'numpy'</span><span class="p">)</span>
+<span class="n">f_pap</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">lambdify</span><span class="p">(</span><span class="n">x_sym</span><span class="p">,</span> <span class="n">u_paper</span><span class="p">,</span> <span class="s1">'numpy'</span><span class="p">)</span>
+<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">evalua</span><span class="p">(</span><span class="n">f_pap</span><span class="p">,</span> <span class="n">xs</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"paper"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">evalua</span><span class="p">(</span><span class="n">f_mia</span><span class="p">,</span> <span class="n">xs</span><span class="p">),</span> <span class="s1">'--'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"obtenida"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">Xi</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">evalua</span><span class="p">(</span><span class="n">f_mia</span><span class="p">,</span> <span class="n">Xi</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">s</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">'k'</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"puntos de la EDO"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"x"</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"u(x)"</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d9dd8937">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Ecuacion-3">Ecuacion 3<a class="anchor-link" href="#Ecuacion-3">¶</a></h2><p>$\nabla ^{2} u(x)= f(x)$</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=66a21bf3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nd">@lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_simbolicas_poisson</span><span class="p">(</span><span class="n">estructura</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">a_simbolo</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+        <span class="n">v</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">MARCA</span><span class="si">}</span><span class="s2">"</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;=</span> <span class="n">MARCA</span> <span class="k">else</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\d+\.\d+'</span><span class="p">,</span> <span class="n">a_simbolo</span><span class="p">,</span> <span class="n">estructura</span><span class="p">)</span>
+    <span class="n">xs</span> <span class="o">=</span> <span class="p">[</span><span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">d</span><span class="p">)]</span>
+    <span class="n">cs</span> <span class="o">=</span> <span class="p">[</span><span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)]</span>
+    <span class="n">loc</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="p">{</span><span class="sa">f</span><span class="s2">"X_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">d</span><span class="p">)},</span> <span class="o">**</span><span class="p">{</span><span class="sa">f</span><span class="s2">"C_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">:</span> <span class="n">cs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)}}</span>
+    <span class="n">expr</span> <span class="o">=</span> <span class="n">parse_expr</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">local_dict</span><span class="o">=</span><span class="n">loc</span><span class="p">,</span> <span class="n">transformations</span><span class="o">=</span><span class="n">transformaciones</span><span class="p">)</span>
+    <span class="n">laplaciano</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">xi</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">lambdify</span><span class="p">([</span><span class="o">*</span><span class="n">xs</span><span class="p">,</span> <span class="o">*</span><span class="n">cs</span><span class="p">],</span> <span class="n">expr</span><span class="p">,</span> <span class="s1">'numpy'</span><span class="p">),</span>
+            <span class="n">sp</span><span class="o">.</span><span class="n">lambdify</span><span class="p">([</span><span class="o">*</span><span class="n">xs</span><span class="p">,</span> <span class="o">*</span><span class="n">cs</span><span class="p">],</span> <span class="n">laplaciano</span><span class="p">,</span> <span class="s1">'numpy'</span><span class="p">))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">derivadas_poisson</span><span class="p">(</span><span class="n">individual</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">individual</span><span class="o">.</span><span class="n">get_number_local_optimization_params</span><span class="p">()</span>
+    <span class="n">consts</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">individual</span><span class="o">.</span><span class="n">constants</span><span class="p">]</span>
+    <span class="n">marcado</span> <span class="o">=</span> <span class="n">individual</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">marcado</span><span class="o">.</span><span class="n">set_local_optimization_params</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">MARCA</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)])</span>
+    <span class="n">u</span><span class="p">,</span> <span class="n">laplaciano</span> <span class="o">=</span> <span class="n">_simbolicas_poisson</span><span class="p">(</span><span class="n">marcado</span><span class="o">.</span><span class="n">get_formatted_string</span><span class="p">(</span><span class="s2">"sympy"</span><span class="p">),</span> <span class="n">k</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">u</span><span class="p">,</span> <span class="n">laplaciano</span><span class="p">,</span> <span class="n">consts</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">evalua_nd</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">pts</span><span class="p">,</span> <span class="n">consts</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">broadcast_to</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">pts</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="o">*</span><span class="n">consts</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">),</span> <span class="p">(</span><span class="n">pts</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=07a5b6c0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">Make_Puntos</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">n_borde</span><span class="p">,</span> <span class="n">m_interior</span><span class="p">):</span>
+    <span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+    <span class="n">interior</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">m_interior</span><span class="p">,</span> <span class="n">d</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">borde</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">]])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">borde</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">n_borde</span><span class="p">,</span> <span class="n">d</span><span class="p">))</span>
+        <span class="n">cara</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">integers</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n_borde</span><span class="p">)</span>                 <span class="c1"># en qué coordenada cae la frontera</span>
+        <span class="n">borde</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">n_borde</span><span class="p">),</span> <span class="n">cara</span><span class="p">]</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">integers</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n_borde</span><span class="p">)</span>   <span class="c1"># en 0 o en 1</span>
+    <span class="k">return</span> <span class="n">interior</span><span class="p">,</span> <span class="n">borde</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ae6a1fed">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">EDO3</span><span class="p">(</span><span class="n">VectorBasedFunction</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interior</span><span class="p">,</span> <span class="n">borde</span><span class="p">,</span> <span class="n">lambdA</span> <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">metric</span><span class="o">=</span><span class="s2">"mse"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">interior</span> <span class="o">=</span> <span class="n">interior</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">borde</span> <span class="o">=</span> <span class="n">borde</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lambdA</span> <span class="o">=</span> <span class="n">lambdA</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">d</span> <span class="o">=</span> <span class="n">interior</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_res</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">interior</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">borde</span><span class="p">)</span>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">evaluate_fitness_vector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">individual</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">u</span><span class="p">,</span> <span class="n">laplaciano</span><span class="p">,</span> <span class="n">consts</span> <span class="o">=</span> <span class="n">derivadas_poisson</span><span class="p">(</span><span class="n">individual</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">d</span><span class="p">)</span>
+
+            <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">interior</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">d</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">X</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="c1">#DEBE CUMPLIR LA EDO   laplaciano(u) = f</span>
+            <span class="n">residual1</span> <span class="o">=</span> <span class="n">evalua_nd</span><span class="p">(</span><span class="n">laplaciano</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">consts</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span>
+
+            <span class="c1">#DEBE CUMPLIR LA FRONTERA   u = 0</span>
+            <span class="n">residual2</span> <span class="o">=</span> <span class="n">evalua_nd</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">borde</span><span class="p">,</span> <span class="n">consts</span><span class="p">)</span>
+
+            <span class="n">RESIDUALULTRAMASTERpro</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">residual1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">lambdA</span> <span class="o">*</span> <span class="n">residual2</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">RESIDUALULTRAMASTERpro</span><span class="p">)):</span>
+                <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_res</span><span class="p">,</span> <span class="mf">1e10</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">RESIDUALULTRAMASTERpro</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_res</span><span class="p">,</span> <span class="mf">1e10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5c50f645">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">n_borde</span><span class="p">,</span> <span class="n">m_interior</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">20</span>        <span class="c1"># para 2D, como el paper: n_borde = 16, m_interior = 32</span>
+
+<span class="n">component_generator</span> <span class="o">=</span> <span class="n">ComponentGenerator</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="n">component_generator</span><span class="o">.</span><span class="n">add_operator</span><span class="p">(</span><span class="s2">"*"</span><span class="p">)</span>
+<span class="n">component_generator</span><span class="o">.</span><span class="n">add_operator</span><span class="p">(</span><span class="s2">"sin"</span><span class="p">)</span>
+<span class="n">agraph_generator</span> <span class="o">=</span> <span class="n">AGraphGenerator</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">component_generator</span><span class="p">,</span> <span class="n">use_simplification</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>   <span class="c1"># complejidad 20, Tabla 2 del paper</span>
+
+<span class="n">interior</span><span class="p">,</span> <span class="n">borde</span> <span class="o">=</span> <span class="n">Make_Puntos</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">n_borde</span><span class="p">,</span> <span class="n">m_interior</span><span class="p">)</span>
+
+<span class="n">fitness</span> <span class="o">=</span> <span class="n">EDO3</span><span class="p">(</span><span class="n">interior</span><span class="p">,</span> <span class="n">borde</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">ScipyOptimizer</span><span class="p">(</span><span class="n">fitness</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">"lm"</span><span class="p">)</span>
+<span class="n">local_opt_fitness</span> <span class="o">=</span> <span class="n">LocalOptFitnessFunction</span><span class="p">(</span><span class="n">fitness</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">)</span>
+<span class="n">evaluator</span> <span class="o">=</span> <span class="n">Evaluation</span><span class="p">(</span><span class="n">local_opt_fitness</span><span class="p">)</span>
+
+<span class="n">crossover</span> <span class="o">=</span> <span class="n">AGraphCrossover</span><span class="p">()</span>
+<span class="n">mutation</span> <span class="o">=</span> <span class="n">AGraphMutation</span><span class="p">(</span><span class="n">component_generator</span><span class="p">)</span>
+
+<span class="n">ea</span> <span class="o">=</span> <span class="n">AgeFitnessEA</span><span class="p">(</span><span class="n">evaluator</span><span class="p">,</span> <span class="n">agraph_generator</span><span class="p">,</span> <span class="n">crossover</span><span class="p">,</span> <span class="n">mutation</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span>
+<span class="n">island</span> <span class="o">=</span> <span class="n">Island</span><span class="p">(</span><span class="n">ea</span><span class="p">,</span> <span class="n">agraph_generator</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=17b9a224">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">paso</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
+    <span class="n">island</span><span class="o">.</span><span class="n">evolve</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"gen </span><span class="si">{</span><span class="n">paso</span><span class="o">*</span><span class="mi">10</span><span class="si">}</span><span class="s2"> | mejor fitness </span><span class="si">{</span><span class="n">island</span><span class="o">.</span><span class="n">get_best_fitness</span><span class="p">()</span><span class="si">:</span><span class="s2">.6g</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">t0</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> s"</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">island</span><span class="o">.</span><span class="n">get_best_fitness</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mf">1e-15</span><span class="p">:</span> <span class="k">break</span>
+<span class="n">mejor</span> <span class="o">=</span> <span class="n">island</span><span class="o">.</span><span class="n">get_best_individual</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mejor</span><span class="o">.</span><span class="n">get_formatted_string</span><span class="p">(</span><span class="s2">"console"</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>gen 10 | mejor fitness 0.577957 | 4 s
+gen 20 | mejor fitness 0.577957 | 8 s
+gen 30 | mejor fitness 0.577957 | 11 s
+gen 40 | mejor fitness 0.577957 | 15 s
+gen 50 | mejor fitness 0.577957 | 18 s
+gen 60 | mejor fitness 0.577957 | 21 s
+gen 70 | mejor fitness 0.577957 | 23 s
+gen 80 | mejor fitness 0.577957 | 25 s
+gen 90 | mejor fitness 0.544382 | 27 s
+gen 100 | mejor fitness 0.544382 | 30 s
+gen 110 | mejor fitness 0.544382 | 36 s
+gen 120 | mejor fitness 0.544382 | 40 s
+gen 130 | mejor fitness 0.544382 | 45 s
+gen 140 | mejor fitness 0.544382 | 49 s
+gen 150 | mejor fitness 0.516609 | 55 s
+gen 160 | mejor fitness 0.516609 | 59 s
+gen 170 | mejor fitness 0.516609 | 62 s
+gen 180 | mejor fitness 0.516609 | 67 s
+gen 190 | mejor fitness 0.516609 | 72 s
+gen 200 | mejor fitness 0.443789 | 78 s
+gen 210 | mejor fitness 0.443789 | 84 s
+gen 220 | mejor fitness 0.443789 | 91 s
+gen 230 | mejor fitness 0.443387 | 98 s
+gen 240 | mejor fitness 0.443387 | 104 s
+gen 250 | mejor fitness 0.443387 | 112 s
+gen 260 | mejor fitness 0.443387 | 118 s
+gen 270 | mejor fitness 0.443387 | 125 s
+gen 280 | mejor fitness 0.443387 | 130 s
+gen 290 | mejor fitness 0.443387 | 136 s
+gen 300 | mejor fitness 0.443387 | 141 s
+(-12.186213)((sin((sin(360.582324))((X_0)(sin(X_0)))))(sin(sin((sin(360.582324))(sin(X_0))))))
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7f6cde4c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">Xt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="n">d</span><span class="p">))</span>
+<span class="n">u_obt</span> <span class="o">=</span> <span class="n">mejor</span><span class="o">.</span><span class="n">evaluate_equation_at</span><span class="p">(</span><span class="n">Xt</span><span class="p">)[:,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">u_paper</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">Xt</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"error máximo vs. solución del paper:"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">u_obt</span> <span class="o">-</span> <span class="n">u_paper</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"constantes:"</span><span class="p">,</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">mejor</span><span class="o">.</span><span class="n">constants</span><span class="p">],</span> <span class="s2">"| pi ="</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>error máximo vs. solución del paper: 3.1054654644349706
+constantes: [-12.186213099136758, 360.58232436276165] | pi = 3.141592653589793
 </pre>
 </div>
 </div>
